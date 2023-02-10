@@ -1,0 +1,13 @@
+.big{
+    font-size: 22px;
+    /* font-family: noto; */
+}
+.extra{ font-size: 14px;}
+
+.f_lable{ font-size: 16px;}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
