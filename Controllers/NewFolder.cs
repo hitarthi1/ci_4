@@ -9,8 +9,11 @@ namespace WebApplication4.Controllers
             return View();
         }
 
-
-
+        
+ public IActionResult Forgot_password()
+        {
+            return View();
+        }
 
     }
 }
