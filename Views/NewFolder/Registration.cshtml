@@ -1,14 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Login Page";
-}
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
 @{
     Layout = null;
-}
+}}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>forgotpassword</title>
+    <title>register</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" />
@@ -20,8 +20,9 @@
 
 
     <div class="container-fluid">
-        <div class="row justify-content-center align-items-center " style="height: 100vh ; ">
-                      <!-- Indicators/corousel/start -->
+        <div class="row justify-content-center align-items-center " style="height: 100vh; ">
+
+                    <!-- Indicators/corousel/start -->
             <div class="col-md-12 col-lg-9 col-xl-8 m-0px">
                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -73,57 +74,76 @@
             
                       <!-- Indicators/corousel/end -->
                       <!-- Indicators/content/start -->
+            <div class="col-md-12 col-lg-3 col-xl-4 position-relative container justify-content-center align-items-center"
+                >
+                <!-- <div class="container"></div> -->
 
-            <div class="col-md-12 col-lg-3 col-xl-4 position-relative container justify-content-center align-items-center" style="height: 100vh;">
-               
-
-                <form class="d-flex flex-column mb-3 justify-content-center" style="height: 90%;">
-                    <div class="mb-3 d-flex align-items-center justify-content-center">
-                        <strong class="big">Forgot Password</strong>
-
-                    </div>
-                    <div class="mb-3 d-flex  justify-content-center text-center  ">
-
-                        <div class="extra">Enter your email address you've using for your account below and we will send you a
-                            password reset link</div>
-                    </div>
-                    <div class="mb-3 mt-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
+                <form class="d-flex flex-column p-3 justify-content-center "  style="height: 90%;">
+                    <div class="mb-3 ">
+                        <label for="exampleInputEmail1" class="form-label">First Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                     </div>
+                    <div class="mb-3 ">
+                        <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
-                    <div class="">
-                        <div class="d-grid mb-3">
-                            <button type="button" class="btn btn-block rounded-pill text-warning border-warning">Reset my
-                                password</button>
-                        </div>
                     </div>
+                    <div class="mb-3 ">
+                        <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword5" class="form-label">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword5" class="form-label">Conform Password</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock">
+                    </div>
+
+                    <div class="d-grid mb-3">
+                        <button type="button"
+                            class="btn btn-block rounded-pill text-warning border-warning">Register</button>
+                    </div>
+
 
                     <div class="d-flex justify-content-center mt-3">
-                        <a  href="" class="extra">Login</a>
+                        <a href="" class="extra">Lost your password?</a>
                     </div>
+                    <div class=" d-flex  align-items-center justify-content-center mt-3"><span>Already have an
+                            account</span><a href="">Login now</a></div>
+                    <div class="d-flex justify-content-center mt-3"></div>
+
+
+
 
                 </form>
+
 
 
                 <div class="  d-flex justify-content-center" style="height: 5%;">
                     <a href=""class="extra">Privasy Policy</a>
                 </div>
-                
-              
-
-
-
+               
             </div>
-          
 
 
 
-            </div> 
-           
+
         </div>
+        <div class="position-relative "></div>
+    </div>
+  
 
 </body>
 
