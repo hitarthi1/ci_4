@@ -23,6 +23,13 @@ namespace WebApplication4.Controllers
         {
             return View();
         }
+        public IActionResult Header()
+        {
+            return View();
+        }
+
+
+
 
 
     }
