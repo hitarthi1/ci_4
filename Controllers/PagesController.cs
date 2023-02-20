@@ -2,15 +2,20 @@
 
 namespace WebApplication4.Controllers
 {
-    public class NewFolder : Controller
+    public class PagesController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public IActionResult Login()
         {
             return View();
         }
 
-        
- public IActionResult Forgot_password()
+
+        public IActionResult Forgot_password()
         {
             return View();
         }
@@ -27,10 +32,5 @@ namespace WebApplication4.Controllers
         {
             return View();
         }
-
-
-
-
-
     }
 }
