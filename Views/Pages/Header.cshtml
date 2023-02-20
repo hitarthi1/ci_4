@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿
+
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,18 +13,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
     <style>
-        /* *,
+       
+        *,
         *::after,
         *::before {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         :root {
             --container: 144rem;
             --m-auto: 0 auto;
@@ -29,72 +30,69 @@
             --text-secondary: #637381;
             --star: #ffa645;
         }
-        
+
         html {
-            font-size: 62.5%;
+            /* font-size: 62.5%; */
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
-        
+
         body {
-            font-size: 1.6rem;
+            /* font-size: 1.6rem; */
         }
-        
-        .container {
+
+        /* .container {
             max-width: var(--container);
             margin: var(--m-auto);
             padding: 0 1rem;
         } */
-        
+
         #products {
             padding: 2rem 0;
         }
-        
+
         .btn-controls {
             margin-bottom: 2rem;
         }
-        
-        .btn {
-            display: inline-flex;
-            margin-right: 1rem;
-        }
-        
-        
-        
+
+
+
+
+
         .btn.active ion-icon {
             color: var(--star);
         }
-        
+
         .grid-view {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
-        
+
         .list-view {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
         }
-        
+
         .product img {
             width: 100%;
         }
-        
+
         .list-view .product {
             display: flex;
             gap: 2rem;
             align-items: center;
         }
-        
+
         .list-view .product img {
             /* width: 10rem; */
             object-fit: cover;
         }
-        
+
         .product-details {
             width: 100%;
-           
+
             padding: 1rem 0;
             display: flex;
             gap: 0.5rem;
@@ -102,50 +100,87 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .product-heading {
             /* font-size: 2rem; */
             padding: 0 0 0.5rem 0;
             color: var(--text-primary);
         }
-        
+
         .review {
             display: inline-flex;
             gap: 1rem;
             color: var(--text-secondary);
         }
-        
+
         .product-details ion-icon {
             color: var(--star);
         }
-        
-        @media (max-width: 768px) {
-            .grid-view {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        
-            }
-            .list-view {
-                display: grid;
-                grid-template-columns:1fr;
-                /* grid-template-columns: repeat(1, minmax(25rem, 1fr) ); */
-            }
-        }
-        
-        
-        @media (min-width: 768px) {
-            
-            .list-view {
-                display: grid;
-                /* grid-template-columns:1fr; */
-                grid-template-columns: repeat(1, minmax(25rem, 1fr) );
-            }
-        }</style>
 
+        
+    </style>
 </head>
 
 <body>
-            <partial ></partial>
+
+
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 ">
+            <div class="d-flex flex-wrap col-12 col-md-auto mb-2 justify-content-center ">
+                <a href="/" class="d-flex align-items-center mb-2 mb-md-0 text-dark text-decoration-none">
+                    <svg class="bi me-2" width="60" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Story</a></li>
+                    <li>
+
+
+
+                        <div class="dropdown nav-link px-2 link-secondary">
+                            <div class=" dropdown-toggle" id="dropdownMenuButton" id="dropdownUser2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Policy
+                            </div>
+                            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">New projyhjtyject...</a></li>
+                                <li><a class="dropdown-item" href="#">New projtyujfect...</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="col-md-4 d-flex me-0 justify-content-md-end ">
+                <img src="images/bell.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                <div class="flex-shrink-0 dropdown px-3">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/user-img.png" alt="mdo" width="32" height="32" class="rounded-circle"><span
+                            class="px-2">Evan donohue</span>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+    </div>
+    <hr class="m-0 p-0">
+
 
     <div class="container">
         <div class="row  ">
@@ -158,12 +193,22 @@
 
             <div class=" dropdown border col px-3 d-flex justify-content-between" style="min-height:54ppx;">
 
-                <div class="align-self-center"><a href="#" class="d-block link-dark text-decoration-none data-toggle"
-                        id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="align-self-center dropdown">
+                    <a href="#" class="d-block link-dark text-decoration-none data-toggle" id="dropdownUser2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Country
                     </a>
-                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Checkme1" />
+                                    <label class="form-check-label ms-1" for="Checkme1">Check me</label>
+                                </div>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="me-0 align-self-center"><img src="/images/drop-down.png" alt=""></div>
@@ -177,8 +222,17 @@
                         id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
                         City
                     </a>
-                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Checkme1" />
+                                    <label class="form-check-label ms-1" for="Checkme1">Check me</label>
+                                </div>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="me-0 align-self-center"><img src="/images/drop-down.png" alt=""></div>
@@ -190,8 +244,17 @@
                         id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
                         Theme
                     </a>
-                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Checkme1" />
+                                    <label class="form-check-label ms-1" for="Checkme1">Check me</label>
+                                </div>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="me-0 align-self-center"><img src="/images/drop-down.png" alt=""></div>
@@ -203,12 +266,23 @@
                         id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
                         Skills
                     </a>
-                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Checkme1" />
+                                    <label class="form-check-label ms-1" for="Checkme1">Check me</label>
+                                </div>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="me-0 align-self-center"><img src="/images/drop-down.png" alt=""></div>
             </div>
+
+
         </div>
     </div>
 
@@ -218,332 +292,432 @@
 
     <hr class="m-0 p-0">
 
-    <span class="border d-inline">ghgjk</span>
-    <section id="products">
-        <div class="container">
 
 
-            <div class="btn-controls">
-                <div class="btn grid_view active">
-                    <ion-icon name="grid-outline"></ion-icon>
-                </div>
-                <div class="btn list_view">
-                    <ion-icon name="list-outline"></ion-icon>
-                </div>
+    <div class="container line">
+        <div class="content-width d-flex flex-wrap" style="margin-top: 18px;">
+            <div class="rounded border p-1 ps-2 custom-badge rounded-pill">Tree Plantation<img src="images/cancel.png"
+                    class="p-1 " /></div>
+            <div class="rounded border p-1 ps-2 custom-badge rounded-pill">Canada<img src="images/cancel.png"
+                    class="p-1 " /></div>
+            <div class="rounded border p-1 ps-2 custom-badge rounded-pill">Toronto<img src="images/cancel.png"
+                    class="p-1 " /></div>
+            <div class="rounded border p-1 ps-2 custom-badge rounded-pill">Environment<img src="images/cancel.png"
+                    class="p-1 " /></div>
+            <button class="rounded border p-1 ps-2 pe-2 custom-badge rounded-pill">Clear All</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="container d-flex justify-content-between">
+        <div>
+            <p class="">Explore <b>72 missions</b></p>
+        </div>
+        <div class="sort-head d-flex  ">
+
+            <select class="form-select mx-2" aria-label="Default select example">
+                <option selected>Sort By</option>
+                <option value="1">Latest</option>
+                <option value="2">Oldest</option>
+            </select>
+
+            <div class="rounded-circle bg-light p-2 mx-2">
+                <a href="" id="grid">
+                    <img src="CI Platform Assets/grid.png" alt="ffgg">
+                </a>
             </div>
-            <div class="products grid-view">
-
-
-                
-                <div class="product">
-                    <div class="product-img">
-                        <img src="\images\Grow-Trees-On-the-path-to-environment-sustainability.png" alt="Product" />
-                    </div>
-                    <div class="product-details p-2">
-                        <div>
-                            <!-- <h2 class="product-heading">n</h2>
-                            <h3 class="product-price">n</h3> -->
-                            <div class="product-heading  " style="width: 100%;">
-                                <h2>Education Supplies for Every Pair of Shoes Sold</h2>
-
-
-                                <span class="card-text" style=" text-overflow: ellipsis;   display: inline-block;
-                                
-                                max-width: 400px;
-                                white-space: nowrap;
-                                overflow: hidden !important;">Lorem ip Lorem ipsum dolor sit amet contur eveniet exercitationem repellat placeat quos ullam, nulla animi. Assumenda pariatur exercitationem ullam perferendis accusamus.</span>
-                                <div class="d-flex justify-content-between install mt-3"><span>Tree Canada</span>
-                                    <div>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 
-                            <div>From 10/01/2019 until 25/02/2019</div>
-                            <div>
-    
-                            </div>
-    
-                            <button class="button m-2"> Apply<img class="px-2" src="/images/right-arrow.png" alt=""></button> -->
-
-                        </div>
-                        <div class="align-self-center d-flex justify-content-center justify-item-center flex-column"
-                            style="width:inherit;">
-                            <div><hr />
-                                <span class="headline border text-center d-flex justify-content-center" style=" background-color: #fff;
-                                position: relative;
-                                margin: -30px 30px 0 20px;
-                                z-index: 3;
-                                border-radius: 5px;
-                                
-                                 ">From 10/01/2019 until 25/02/2019</span></div>
-                      
-                            <div>
-                               
-                                <div class="d-flex justify-content-between">
-                                    <div class=" " style="flex: 50%;">hjfg</div>
-                                    <div class=" " style="flex: 50%;">hjfg</div>
-                                   
-                                </div>
-                               
-                            </div>
-                            <div class="d-flex justify-content-center"> <button class="button m-2"> Apply
-                                    <img class="px-2" src="/images/right-arrow.png" alt="">
-                                </button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product">
-                    <div class="product-img">
-                        <img src="\images\Grow-Trees-On-the-path-to-environment-sustainability.png" alt="Product" />
-                    </div>
-                    <div class="product-details p-2">
-                        <div>
-                            <!-- <h2 class="product-heading">n</h2>
-                            <h3 class="product-price">n</h3> -->
-                            <div class="product-heading  " style="width: 100%;">
-                                <h2>Education Supplies for Every Pair of Shoes Sold</h2>
-
-
-                                <span class="card-text" style=" text-overflow: ellipsis;   display: inline-block;
-                                
-                                max-width: 400px;
-                                white-space: nowrap;
-                                overflow: hidden !important;">Lorem ip Lorem ipsum dolor sit amet contur eveniet exercitationem repellat placeat quos ullam, nulla animi. Assumenda pariatur exercitationem ullam perferendis accusamus.</span>
-                                <div class="d-flex justify-content-between install mt-3"><span>Tree Canada</span>
-                                    <div>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 
-                            <div>From 10/01/2019 until 25/02/2019</div>
-                            <div>
-    
-                            </div>
-    
-                            <button class="button m-2"> Apply<img class="px-2" src="/images/right-arrow.png" alt=""></button> -->
-
-                        </div>
-                        <div class="align-self-center d-flex justify-content-center justify-item-center flex-column"
-                            style="width:inherit;">
-                            <div><hr />
-                                <span class="headline border text-center d-flex justify-content-center" style=" background-color: #fff;
-                                position: relative;
-                                margin: -30px 30px 0 20px;
-                                z-index: 3;
-                                border-radius: 5px;
-                                
-                                 ">From 10/01/2019 until 25/02/2019</span></div>
-                      
-                            <div>
-                               
-                                <div class="d-flex justify-content-between">
-                                    <div class=" " style="flex: 50%;">hjfg</div>
-                                    <div class=" " style="flex: 50%;">hjfg</div>
-                                   
-                                </div>
-                               
-                            </div>
-                            <div class="d-flex justify-content-center"> <button class="button m-2"> Apply
-                                    <img class="px-2" src="/images/right-arrow.png" alt="">
-                                </button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="product">
-                    <div class="product-img">
-                        <img src="\images\Grow-Trees-On-the-path-to-environment-sustainability.png" alt="Product" />
-                    </div>
-                    <div class="product-details p-2">
-                        <div>
-                            <!-- <h2 class="product-heading">n</h2>
-                            <h3 class="product-price">n</h3> -->
-                            <div class="product-heading  " style="width: 100%;">
-                                <h2>Education Supplies for Every Pair of Shoes Sold</h2>
-
-
-                                <span class="card-text" style=" text-overflow: ellipsis;   display: inline-block;
-                                
-                                max-width: 400px;
-                                white-space: nowrap;
-                                overflow: hidden !important;">Lorem ip Lorem ipsum dolor sit amet contur eveniet exercitationem repellat placeat quos ullam, nulla animi. Assumenda pariatur exercitationem ullam perferendis accusamus.</span>
-                                <div class="d-flex justify-content-between install mt-3"><span>Tree Canada</span>
-                                    <div>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 
-                            <div>From 10/01/2019 until 25/02/2019</div>
-                            <div>
-    
-                            </div>
-    
-                            <button class="button m-2"> Apply<img class="px-2" src="/images/right-arrow.png" alt=""></button> -->
-
-                        </div>
-                        <div class="align-self-center d-flex justify-content-center justify-item-center flex-column"
-                            style="width:inherit;">
-                            <div><hr />
-                                <span class="headline border text-center d-flex justify-content-center" style=" background-color: #fff;
-                                position: relative;
-                                margin: -30px 30px 0 20px;
-                                z-index: 3;
-                                border-radius: 5px;
-                                
-                                 ">From 10/01/2019 until 25/02/2019</span></div>
-                      
-                            <div>
-                               
-                                <div class="d-flex justify-content-between">
-                                    <div class=" " style="flex: 50%;">hjfg</div>
-                                    <div class=" " style="flex: 50%;">hjfg</div>
-                                   
-                                </div>
-                               
-                            </div>
-                            <div class="d-flex justify-content-center"> <button class="button m-2"> Apply
-                                    <img class="px-2" src="/images/right-arrow.png" alt="">
-                                </button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                
-
-
-                <div class="product">
-                    <div class="product-img">
-                        <img src="\images\Grow-Trees-On-the-path-to-environment-sustainability.png" alt="Product" />
-                    </div>
-                    <div class="product-details p-2">
-                        <div>
-                            <!-- <h2 class="product-heading">n</h2>
-                            <h3 class="product-price">n</h3> -->
-                            <div class="product-heading  " style="width: 100%;">
-                                <h2>Education Supplies for Every Pair of Shoes Sold</h2>
-
-
-                                <span class="card-text" style=" text-overflow: ellipsis;   display: inline-block;
-                                
-                                max-width: 400px;
-                                white-space: nowrap;
-                                overflow: hidden !important;">Lorem ip Lorem ipsum dolor sit amet contur eveniet exercitationem repellat placeat quos ullam, nulla animi. Assumenda pariatur exercitationem ullam perferendis accusamus.</span>
-                                <div class="d-flex justify-content-between install mt-3"><span>Tree Canada</span>
-                                    <div>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 
-                            <div>From 10/01/2019 until 25/02/2019</div>
-                            <div>
-    
-                            </div>
-    
-                            <button class="button m-2"> Apply<img class="px-2" src="/images/right-arrow.png" alt=""></button> -->
-
-                        </div>
-                        <div class="align-self-center d-flex justify-content-center justify-item-center flex-column"
-                            style="width:inherit;">
-                            <div><hr />
-                                <span class="headline border text-center d-flex justify-content-center" style=" background-color: #fff;
-                                position: relative;
-                                margin: -30px 30px 0 20px;
-                                z-index: 3;
-                                border-radius: 5px;
-                                
-                                 ">From 10/01/2019 until 25/02/2019</span></div>
-                      
-                            <div>
-                               
-                                <div class="d-flex justify-content-between">
-                                    <div class=" " style="flex: 50%;">hjfg</div>
-                                    <div class=" " style="flex: 50%;">hjfg</div>
-                                   
-                                </div>
-                               
-                            </div>
-                            <div class="d-flex justify-content-center"> <button class="button m-2"> Apply
-                                    <img class="px-2" src="/images/right-arrow.png" alt="">
-                                </button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                
-
-
+            <div class="rounded-circle p-2 mx-2">
+                <a href="" id="list">
+                    <img src="CI Platform Assets/list.png" alt="fgfg">
+                </a>
             </div>
-
 
 
 
         </div>
-    </section>
+    </div>
+    <div class="container">
+
+        <div class="btn-controls">
+            <div class="btn grid_view active">
+                <ion-icon name="grid-outline"></ion-icon>
+            </div>
+            <div class="btn list_view">
+                <ion-icon name="list-outline"></ion-icon>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class=" main col-lg-4 col-md-6">
+                <div class="card ard">
+                    <div class="card">
+                        <img src="/images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                            class="card-img-top" alt="..." style="width: 100%;height: 100%;">
+                        <div class="card-img-overlay d-flex justify-content-end">
+                            <div class="d-flex flex-column justify-content-between">
+                                <div class="rounded-pill text-white bg-black bg-opacity-50 pe-2 fs-fourteen">
+                                    <img src="/images/pin.png" class="p-2" />Melbourne
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button style="
+                                        border: none;
+                                        cursor: pointer;
+                                        appearance: none;
+                                        background-color: inherit;
+                                      
+                                      "><img src="/images/heart.png"
+                                            class="bg-black bg-opacity-50 rounded-circle p-2" /></button>
+                                    <button style="
+                                    border: none;
+                                    cursor: pointer;
+                                    appearance: none;
+                                    background-color: inherit;
+                                  
+                                  "><img src="/images/user.png"
+                                            class="bg-black bg-opacity-50 rounded-circle p-2" /></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-body pt-0">
+                        <div class="starup">
+                            <div> <span class="fs-4 fw-bold dark-gray">Grow Trees - On the Path to environment
+                                    sustainability.</span>
+                                <p class="light-gray" style="font-size:15px">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed do eiusmod temp bvhjgfjhb or incididunt ut labore...</p>
+                            </div>
+
+                            <div class="d-flex  flex-wrap justify-content-around div1">
+                                <div class="d-flex justify-content-between align-items-center div11"
+                                    style="width: 100%;">
+                                    <span class="dark-gray">Australian Paradise</span>
+                                    <div class="d-flex">
+                                        <img src="/images/selected-star.png" />
+                                        <img src="/images/selected-star.png" />
+                                        <img src="/images/selected-star.png" />
+                                        <img src="/images/star.png" />
+                                        <img src="/images/star.png" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-center none">
+                                        <span class="rounded-pill border p-2 z-1 bg-white">From 10/01/2019 until
+                                            25/02/2019</span>
+                                    </div>
+                                    <hr style="margin-top:-20px" />
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="div2 d-flex  flex-wrap justify-content-space-around ">
+
+
+                            <div class="d-flex  flex-wrap justify-content-between mt-5">
+                                <div class="d-flex align-items-bottom ">
+                                    <img src="/images/Already-volunteered.png" />
+                                    <div class="d-flex flex-column ms-2 ">
+                                        <span class="dark-gray">250</span>
+                                        <span class="light-gray fs-fourteen">Already volunteered</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center ">
+                                    <img src="/images/Seats-left.png" />
+                                    <div class="d-flex flex-column ms-2 ">
+                                        <span class="dark-gray">10</span>
+                                        <span class="light-gray fs-fourteen">Seats Left</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center ">
+                                    <img src="/images/deadline.png" />
+                                    <div class="d-flex flex-column ms-2 ">
+                                        <span class="dark-gray">09/01/2019</span>
+                                        <span class="light-gray fs-fourteen">Deadline</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="/images/mission.png" style="height:24px; width:24px" />
+                                    <div class="d-flex flex-column ms-2 ">
+                                        <div class="progress color-orange" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100" style="height:8px">
+                                            <div class="progress-bar bg-orange-color"
+                                                style="width: 75%; color: orange;"></div>
+                                        </div>
+                                        <span class="light-gray fs-fourteen mt-2">8000 achieved</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-center mt-5" id="apply-btn">
+                                <button type="submit" value="Apply"
+                                    class="btn btn-outline-orange rounded-pill ps-3 pe-3 fw-bold" style="  border-color: #ff9800;
+                                    color: orange;">
+                                    Apply
+                                    <img src="/images/right-arrow.png" class="ms-2" />
+                                </button>
+                            </div>
+
+
+                        </div>
 
 
 
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class=" main col-lg-4 col-md-6">
+                <div class="card ard">
+                    <div class="card">
+                        <img src="/images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                            class="card-img-top" alt="..." style="width: 100%;height: 100%;">
+                        <div class="card-img-overlay d-flex justify-content-end">
+                            <div class="d-flex flex-column justify-content-between">
+                                <div class="rounded-pill text-white bg-black bg-opacity-50 pe-2 fs-fourteen">
+                                    <img src="/images/pin.png" class="p-2" />Melbourne
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button style="
+                                        border: none;
+                                        cursor: pointer;
+                                        appearance: none;
+                                        background-color: inherit;
+                                      
+                                      "><img src="/images/heart.png"
+                                            class="bg-black bg-opacity-50 rounded-circle p-2" /></button>
+                                    <button style="
+                                    border: none;
+                                    cursor: pointer;
+                                    appearance: none;
+                                    background-color: inherit;
+                                  
+                                  "><img src="/images/user.png"
+                                            class="bg-black bg-opacity-50 rounded-circle p-2" /></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-body pt-0">
+                        <div class="starup">
+                            <div> <span class="fs-4 fw-bold dark-gray">Grow Trees - On the Path to environment
+                                    sustainability.</span>
+                                <p class="light-gray" style="font-size:15px">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed do eiusmod temp bvhjgfjhb or incididunt ut labore...</p>
+                            </div>
+
+                            <div class="d-flex  flex-wrap justify-content-around div1">
+                                <div class="d-flex justify-content-between align-items-center div11"
+                                    style="width: 100%;">
+                                    <span class="dark-gray">Australian Paradise</span>
+                                    <div class="d-flex">
+                                        <img src="/images/selected-star.png" />
+                                        <img src="/images/selected-star.png" />
+                                        <img src="/images/selected-star.png" />
+                                        <img src="/images/star.png" />
+                                        <img src="/images/star.png" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-center none">
+                                        <span class="rounded-pill border p-2 z-1 bg-white">From 10/01/2019 until
+                                            25/02/2019</span>
+                                    </div>
+                                    <hr style="margin-top:-20px" />
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="div2 d-flex  flex-wrap justify-content-space-around ">
+
+
+                            <div class="d-flex  flex-wrap justify-content-between mt-5">
+                                <div class="d-flex align-items-bottom ">
+                                    <img src="/images/Already-volunteered.png" />
+                                    <div class="d-flex flex-column ms-2 ">
+                                        <span class="dark-gray">250</span>
+                                        <span class="light-gray fs-fourteen">Already volunteered</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center ">
+                                    <img src="/images/Seats-left.png" />
+                                    <div class="d-flex flex-column ms-2 ">
+                                        <span class="dark-gray">10</span>
+                                        <span class="light-gray fs-fourteen">Seats Left</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center ">
+                                    <img src="/images/deadline.png" />
+                                    <div class="d-flex flex-column ms-2 ">
+                                        <span class="dark-gray">09/01/2019</span>
+                                        <span class="light-gray fs-fourteen">Deadline</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="/images/mission.png" style="height:24px; width:24px" />
+                                    <div class="d-flex flex-column ms-2 ">
+                                        <div class="progress color-orange" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100" style="height:8px">
+                                            <div class="progress-bar bg-orange-color"
+                                                style="width: 75%; color: orange;"></div>
+                                        </div>
+                                        <span class="light-gray fs-fourteen mt-2">8000 achieved</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-center mt-5" id="apply-btn">
+                                <button type="submit" value="Apply"
+                                    class="btn btn-outline-orange rounded-pill ps-3 pe-3 fw-bold" style="  border-color: #ff9800;
+                                    color: orange;">
+                                    Apply
+                                    <img src="/images/right-arrow.png" class="ms-2" />
+                                </button>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script >let products_container = document.querySelector('.products');
+    <script>
+
+        let main = document.getElementsByClassName("main");
+        let div1 = document.getElementsByClassName("div1");
+        let div2 = document.getElementsByClassName("div2");
+        let none = document.getElementsByClassName("none");
+        let starup = document.getElementsByClassName("starup");
         let btns = document.querySelectorAll('.btn');
-        
+        let ard = document.getElementsByClassName("ard");
+
+
+
         async function fetchProduct() {
-        
-        
+
+
             function btn_active(btn) {
                 btns.forEach((btn) => {
                     btn.classList.remove('active');
                 });
                 btn.classList.add('active');
             }
-        
+
             btns.forEach((btn) => {
                 btn.addEventListener('click', () => {
                     let match = btn.classList;
                     if (match.contains('list_view')) {
-                        products_container.classList.add('list-view');
-                        products_container.classList.remove('grid-view');
+                        for (i = 0; i < main.length; i++) {
+                            main[i].classList.remove('col-lg-4')
+                            main[i].classList.remove('col-md-6');
+                            main[i].classList.remove('col-lg-4');
+                            main[i].classList.remove('col-md-6');
+                        }
+
+
+                        for (i = 0; i < div1.length; i++) { div1[i].classList.add('d-flex'); }
+                        for (i = 0; i < ard.length; i++) {
+                            ard[i].classList.add('d-flex');
+                            ard[i].classList.add('flex-row');
+                        }
+                        for (i = 0; i < none.length; i++) { none[i].classList.add('d-none'); }
+                        for (i = 0; i < starup.length; i++) {
+                            starup[i].classList.add('d-flex');
+                            starup[i].classList.add('flex-column');
+                            starup[i].classList.add('flex-md-column-reverse');
+                        }
+                        for (i = 0; i < div2.length; i++) {
+                            div2[i].classList.add('flex-wrap');
+                            div2[i].classList.add('justify-content-around'); div2[i].classList.add('d-flex');
+                        }
+
+
+
+
+
+                        // div2.classList.add('flex-row-reverse');
+
+
+
+                        function myFunction(x) {
+                            if (x.matches && match.contains('list_view')) {
+                                ard.classList.remove('d-flex');
+                                ard.classList.remove('flex-row');
+                            } if (!x.matches && !match.contains('list_view')) {
+                                ard.classList.add('d-flex');
+                                ard.classList.add('flex-row');
+                            }
+                        }
+
+                        var x = window.matchMedia("(max-width: 767px)")
+                        myFunction(x) // Call listener function at run time
+                        x.addListener(myFunction)
                         btn_active(btn);
                     } else {
-                        products_container.classList.add('grid-view');
-                        products_container.classList.remove('list-view');
+
+
+
+                        for (i = 0; i < main.length; i++) {  main[i].classList.add('col-lg-4');
+                        main[i].classList.add('col-md-6'); }
+                      
+                        for (i = 0; i < div1.length; i++) {  div1[i].classList.remove('d-flex'); }
+                        
+
+                        for (i = 0; i < div2.length; i++) { div2[i].classList.remove('d-flex');
+                        // div2.classList.remove('flex-row-reverse');
+                        div2[i].classList.remove('flex-wrap');
+                        div2[i].classList.remove('justify-content-around'); }
+                       
+                        
+
+                        
+
+                        for (i = 0; i < ard.length; i++) {
+                            ard[i].classList.remove('d-flex');
+                            ard[i].classList.remove('d-flex');
+                            ard[i].classList.remove('flex-row');
+                            ard[i].classList.remove('flex-row');
+                            ard[i].classList.remove('d-flex');
+                        ard[i].classList.remove('flex-row');
+                        }
+
+
+                        for (i = 0; i < starup.length; i++) {
+                            starup[i].classList.remove('d-flex');
+                            starup[i].classList.remove('flex-column');
+                            starup[i].classList.remove('flex-md-column-reverse');
+                        }
+
+                        for (i = 0; i < none.length; i++) { none[i].classList.remove('d-none'); }
+
+
                         btn_active(btn);
                     }
                 });
