@@ -106,7 +106,7 @@
 
                     </div>
                     <div class="mb-3">
-                        <label for="inputPassword5" class="form-label">Conform Password</label>
+                        <label for="inputPassword5" class="form-label">Confirm Password</label>
                         <input type="password" id="inputPassword5" class="form-control"
                             aria-describedby="passwordHelpBlock">
                     </div>
@@ -118,10 +118,10 @@
 
 
                     <div class="d-flex justify-content-center mt-3">
-                        <a href="" class="extra">Lost your password?</a>
+                        <a  asp-controller="Pages" asp-action="Forgot_password" style="text-decoration:none"  class="extra">Lost your password?</a>
                     </div>
                     <div class=" d-flex  align-items-center justify-content-center mt-3"><span>Already have an
-                            account</span><a href="">Login now</a></div>
+                            account</span><a  asp-controller="Pages" asp-action="Login" style="text-decoration:none">Login now</a></div>
                     <div class="d-flex justify-content-center mt-3"></div>
 
 
@@ -132,7 +132,7 @@
 
 
                 <div class="  d-flex justify-content-center" style="height: 5%;">
-                    <a href=""class="extra">Privasy Policy</a>
+                    <a  asp-controller="Pages" asp-action="Privacy_policy" style="text-decoration:none" class="extra">Privasy Policy</a>
                 </div>
                
             </div>

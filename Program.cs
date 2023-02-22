@@ -23,6 +23,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=NewFolder}/{action=Login}/{id?}");
+    pattern: "{controller=Pages}/{action=Login}/{id?}");
    // pattern: "{controller=Home}/{action=Index}/{id?}");
 app.Run();

@@ -4,10 +4,7 @@ namespace WebApplication4.Controllers
 {
     public class PagesController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
 
         public IActionResult Login()
         {
@@ -29,6 +26,14 @@ namespace WebApplication4.Controllers
             return View();
         }
         public IActionResult Header()
+        {
+            return View();
+        }
+        public IActionResult Extra()
+        {
+            return View();
+        }
+        public IActionResult Mission()
         {
             return View();
         }
