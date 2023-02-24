@@ -29,13 +29,15 @@ namespace WebApplication4.Controllers
         {
             return View();
         }
-        public IActionResult Extra()
-        {
-            return View();
-        }
+      
         public IActionResult Mission()
         {
             return View();
         }
+        public IActionResult Storylist()
+        {
+            return View();
+        }
+
     }
 }
